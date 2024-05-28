@@ -1,0 +1,134 @@
+:root::-webkit-scrollbar{display: none;}
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    list-style-type: none;
+}
+.H1DIV{
+    border: 2px solid rgb(157, 237, 220);
+    background-color: rgb(157, 237, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.H1{
+    text-wrap: wrap;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(1, 1, 55);
+}
+.FRMDIV{
+    margin: 20px;
+    padding: 15px;
+}
+.FRM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.IP{
+    flex-grow: 0.2;
+    padding: 7px;
+    border-radius: 30px;
+    border: 2px solid black;
+    outline: none;
+}
+.Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.ONE{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    overflow: scroll;
+}
+.ONE::-webkit-scrollbar{display: none}
+.ONEH1{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(157, 237, 220);
+    border-radius: 20px;
+}
+.SBMT{
+    border: 2px solid rgb(1, 1, 33);
+    border-radius: 20px;
+    outline: none;
+    background: brown;
+    color: white;
+    font-weight: 600;
+    padding: 7px;
+}
+@media screen and (width <= 375px){
+    .H1{
+        font-size: 28px;
+    }
+    .FRMDIV{
+        margin: 10px;
+        padding: 7px;
+    }
+}
+@media screen and (width <= 1270px) {
+    .Container{
+        column-gap: 10px;
+    }
+    .ONE{
+        width: 220px;
+        height: 220px;
+        margin: 7px;
+        padding: 7px;
+    }
+}
+@media screen and (width <= 1040px) {
+    .ONE{
+        width: 100%;
+        height: 200px;
+    }
+}
+@media screen and (width <= 768px) {
+    .ONE{
+        width: 45%;
+        height: 200px;
+    }
+}
+@media screen and (width <= 730px){
+    .Container{
+        justify-content: space-evenly;
+        column-gap: 5px;
+    }
+    .ONE{
+        width: 240px;
+        height: 240px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+@media screen and (width <= 532px){
+    .Container{
+        justify-content: space-evenly;
+        column-gap: 5px;
+    }
+    .ONE{
+        width: 100%;
+        height: 240px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
